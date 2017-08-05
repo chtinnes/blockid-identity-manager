@@ -1,6 +1,7 @@
 package de.cect.blockid.identitymanager.identityvalidator.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Profile;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,9 +31,16 @@ public class IdentityValidatorController {
 	@Autowired
 	private IdentityValidator identityValidator;
 
+	@Value("${blockid.identitymanager.publickey.base64}")
+	private String publicKeyBase64;
+
 	@RequestMapping(path = "/version", method = RequestMethod.GET, consumes = MediaType.ALL_VALUE)
 	public String getVersion() {
 		return "{\"version\": \"" + ApplicationConstants.APP_VERSION + "\"}";
+	}
+
+	public String getPublicKey() {
+		return "{\"key\": \"" + this.publicKeyBase64 + "\"}";
 	}
 
 	// TODO ctinnes request validation here (should be simple annotations)

@@ -38,7 +38,7 @@ public class ExampleAppController {
 
 	// TODO ctinnes request validation here (should be simple annotations)
 	@RequestMapping(path = "/validate", method = RequestMethod.POST)
-	public ResponseForValidationRequest makeAssertion(@RequestBody RequestForValidation request) {
+	public ResponseForValidationRequest validate(@RequestBody RequestForValidation request) {
 		ResponseForValidationRequest response = new ResponseForValidationRequest();
 		BeanUtils.copyProperties(request, response);
 		response.setIsValid(this.validateIdentityAssertion.validateIdentityAssertion(request.getIdentityAttributeName(),
