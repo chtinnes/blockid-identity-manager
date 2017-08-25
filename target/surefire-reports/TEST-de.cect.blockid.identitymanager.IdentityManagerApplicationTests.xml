@@ -1,66 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.cect.blockid.identitymanager.IdentityManagerApplicationTests" time="0.703" tests="3" errors="0" skipped="0" failures="0">
+<testsuite name="de.cect.blockid.identitymanager.IdentityManagerApplicationTests" time="1.205" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
-    <property name="java.vm.version" value="25.101-b13"/>
+    <property name="sun.boot.library.path" value="C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\bin"/>
+    <property name="java.vm.version" value="25.65-b01"/>
+    <property name="user.country.format" value="DE"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\yoga\workspaces\identitymanager"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ctinnes\dev_env\java\blockid\workspaces\main\blockid-identity-manager"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\yoga\workspaces\identitymanager"/>
-    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="user.dir" value="C:\Users\ctinnes\dev_env\java\blockid\workspaces\main\blockid-identity-manager"/>
+    <property name="java.runtime.version" value="1.8.0_65-b17"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\yoga\AppData\Local\Temp\"/>
+    <property name="java.endorsed.dirs" value="C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\ctinnes\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\yoga\workspaces\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7343649283454133054.tmp"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\ctinnes\dev_env\java\blockid\workspaces\main\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2103872666416576458.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_101/bin/server;C:/Program Files/Java/jre1.8.0_101/bin;C:/Program Files/Java/jre1.8.0_101/lib/amd64;C:\dev_tools\python\2.7.12\;C:\dev_tools\python\2.7.12\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\dev_tools\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\dev_tools\Docker Toolbox;C:\dev_tools\go\bin;C:\dev_tools\nodejs\;C:\Program Files\PostgreSQL\9.6\bin;C:\Users\yoga\AppData\Local\Microsoft\WindowsApps;C:\dev_tools\Docker Toolbox;C:\Users\yoga\AppData\Roaming\npm;C:\Users\yoga\AppData\Roaming\Dashlane\4.8.3.33472\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\yoga\AppData\Roaming\Dashlane\4.8.3.33472\ucrt;C:\Users\yoga\workspaces;;."/>
+    <property name="java.library.path" value="C:\Users\ctinnes\dev_env\java\blockid\software\java\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\ctinnes\dev_env\java\blockid\software\tomcat-8.0.30\bin;C:\Users\ctinnes\dev_env\java\blockid\software\subversion\bin;C:\Users\ctinnes\dev_env\java\blockid\software\Sencha;C:\Users\ctinnes\dev_env\java\blockid\software\ruby\bin;C:\Users\ctinnes\dev_env\java\blockid\software\python;C:\Users\ctinnes\dev_env\java\blockid\software\nodejs;C:\Users\ctinnes\dev_env\java\blockid\software\maven\bin;C:\Users\ctinnes\dev_env\java\blockid\software\logstash\bin;C:\Users\ctinnes\dev_env\java\blockid\software\logs;C:\Users\ctinnes\dev_env\java\blockid\software\java\bin;C:\Users\ctinnes\dev_env\java\blockid\software\elasticsearch\bin;C:\Users\ctinnes\dev_env\java\blockid\software\eclipse;C:\Users\ctinnes\dev_env\java\blockid\software\ant\bin;C:\Users\ctinnes\dev_env\java\blockid\software\Sencha\Cmd\default;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\jdk1.7.0_80\bin\;C:\apache-maven-3.3.9\bin\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\GNU\GnuPG\pub;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\TortoiseHg\;C:\Program Files\IBM\Bluemix\bin;C:\Program Files\CloudFoundry;C:\Program Files\Perforce\DVCS\;C:\dev_tools\AWS_cli\;C:\dev_tools\bin\;C:\dev_tools\go\bin;C:\dev_tools\Node\;C:\Program Files (x86)\Skype\Phone\;C:\Users\ctinnes\AppData\Local\Continuum\Anaconda3;C:\Users\ctinnes\AppData\Local\Continuum\Anaconda3\Scripts;C:\Users\ctinnes\AppData\Local\Continuum\Anaconda3\Library\bin;C:\dev_tools\Ruby22-x64\bin;C:\Users\ctinnes\AppData\Roaming\Python\Scripts;C:\Users\ctinnes\oasp_projects\software\tomcat\bin;C:\Users\ctinnes\oasp_projects\software\subversi\bin;C:\Users\ctinnes\oasp_projects\software\Sencha;C:\Users\ctinnes\oasp_projects\software\ruby\bin;C:\Users\ctinnes\oasp_projects\software\python;C:\Users\ctinnes\oasp_projects\software\nodejs;C:\Users\ctinnes\oasp_projects\software\logstash\bin;C:\Users\ctinnes\oasp_projects\software\logs;C:\Users\ctinnes\oasp_projects\software\java\bin;C:\Users\ctinnes\oasp_projects\software\elasticsearch\bin;C:\Users\ctinnes\oasp_projects\software\eclipse;C:\Users\ctinnes\oasp_projects\software\ant\bin;C:\Users\ctinnes\oasp_projects\software\Sencha\Cmd\default;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\apache-maven-3.3.9\bin\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Users\ctinnes\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\ctinnes\AppData\Local\Programs\Python\Python35-32\;C:\apache-maven-3.3.9\bin\;C:\Users\ctinnes\AppData\Local\Programs\MiKTeX2.9\miktex\bin\;C:\Users\ctinnes\AppData\Roaming\npm;C:\glassfish4\glassfish\bin;C:\Program Files\Java\jdk1.8.0_74\bin;C:\dev_tools\go\bin;C:\Users\ctinnes\workspaces\go_samples\bin;C:\Program Files\Docker Toolbox;C:\Users\ctinnes\AppData\Roaming\npm;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\yoga"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\ctinnes"/>
     <property name="user.timezone" value="Europe/Berlin"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="yoga"/>
-    <property name="java.class.path" value="/C:/dev_tools/java_ee/jee-oxygen/eclipse/../../../../Users/yoga/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.8.0.20170516-2042/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="ctinnes"/>
+    <property name="java.class.path" value="/C:/Users/ctinnes/dev_env/java/blockid/software/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean compile install"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Users\ctinnes\dev_env\java\blockid\software\java\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean package"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
+    <property name="user.language.format" value="de"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_101"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\classes"/>
+    <property name="java.version" value="1.8.0_65"/>
+    <property name="java.ext.dirs" value="C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\lib\resources.jar;C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\lib\rt.jar;C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\lib\sunrsasign.jar;C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\lib\jsse.jar;C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\lib\jce.jar;C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\lib\charsets.jar;C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\lib\jfr.jar;C:\Users\ctinnes\dev_env\java\blockid\software\java\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\yoga\workspaces\identitymanager\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\ctinnes\dev_env\java\blockid\workspaces\main\blockid-identity-manager\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="testSignatureAlgorithmPositive" classname="de.cect.blockid.identitymanager.IdentityManagerApplicationTests" time="0.576"/>
-  <testcase name="testCryptoUtilsFullScenarioPositive" classname="de.cect.blockid.identitymanager.IdentityManagerApplicationTests" time="0.123"/>
-  <testcase name="contextLoads" classname="de.cect.blockid.identitymanager.IdentityManagerApplicationTests" time="0.004"/>
+  <testcase name="testSignatureAlgorithmPositive" classname="de.cect.blockid.identitymanager.IdentityManagerApplicationTests" time="1.089"/>
+  <testcase name="testCryptoUtilsFullScenarioPositive" classname="de.cect.blockid.identitymanager.IdentityManagerApplicationTests" time="0.114"/>
+  <testcase name="contextLoads" classname="de.cect.blockid.identitymanager.IdentityManagerApplicationTests" time="0.002"/>
 </testsuite>

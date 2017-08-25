@@ -17,7 +17,7 @@ import de.cect.blockid.identitymanager.identityreceiver.logic.api.to.DecryptedId
 
 /**
  * The REST Controller for the Identity Receiver Component.
- * 
+ *
  * @author ctinnes
  * @since blockid-0.0.1
  *
@@ -39,6 +39,7 @@ public class IdentityReceiverController {
 		return "{\"version\": \"" + ApplicationConstants.APP_VERSION + "\"}";
 	}
 
+	@RequestMapping(path = "/publickey", method = RequestMethod.GET, consumes = MediaType.ALL_VALUE)
 	public String getPublicKey() {
 		return "{\"key\": \"" + this.publicKeyBase64 + "\"}";
 	}

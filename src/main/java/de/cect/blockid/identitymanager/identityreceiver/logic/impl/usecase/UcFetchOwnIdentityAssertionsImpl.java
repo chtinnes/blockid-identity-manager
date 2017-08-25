@@ -23,7 +23,7 @@ import de.cect.blockid.identitymanager.identityvalidator.logic.api.to.DecryptedI
 /**
  * Implementation of {@link UcFetchOwnIdentityAssertions} which stores the
  * decrypted assertions in a List.
- * 
+ *
  * @author ctinnes
  * @since blockid-0.0.1
  *
@@ -51,7 +51,7 @@ public class UcFetchOwnIdentityAssertionsImpl implements UcFetchOwnIdentityAsser
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see de.cect.blockid.identitymanager.identityreceiver.logic.api.usecase.
 	 * UcFetchOwnIdentityAssertions#fetchOwnIdentityAssertions()
 	 */
@@ -68,7 +68,12 @@ public class UcFetchOwnIdentityAssertionsImpl implements UcFetchOwnIdentityAsser
 				this.privateKey, CryptoUtils.RSA);
 		DecryptedIdentityAssertionWithSecretKeyTo decryptedAssertionWithKey = new DecryptedIdentityAssertionWithSecretKeyTo();
 		DecryptedIdentityAssertionTo decryptedAssertion = this.identityValidator.decryptIdentityAssertion(message, key);
-		BeanUtils.copyProperties(decryptedAssertion, decryptedAssertionWithKey);
+
+		//TODO ctinnes use proper bean mapping (maybe think about harmonizing the names of fields throughout the application)
+		decryptedAssertionWithKey.setIdentityAttributeName(decryptedAssertion.getIdentityAttributeName());
+		decryptedAssertionWithKey.setIdentityAttributeValue(decryptedAssertion.getIdentityAttributeValue());
+		decryptedAssertionWithKey.setReceiverAddressBase64(decryptedAssertion.getIdentityAssertionReceiverAddressBase64());
+		decryptedAssertionWithKey.setSenderAddressBase64(decryptedAssertion.getIdentityAssertionSenderAddressBase64());
 		decryptedAssertionWithKey.setSecretKeyBase64(key);
 		return decryptedAssertionWithKey;
 	}
